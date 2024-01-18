@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Contrail One:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="index1">
+      <div class="a-dad-joke">A Dad Joke a day
+        <img src="./images/beer.png"/>
+      </div>
+      <div class="ellipse-parent">
+        <div class="frame-child"></div>
+        <div class="rectangle-parent">
+          <div class="group-child"></div>
+          <div class="give-me-another" id="joke">Why did the scarecrow win an award? Because he was outstanding in his field!</div>
+        </div>
+      </div>
+      <button id="getJokeBtn">Give me another Dad joke</button>
+      <div class="index-child"></div>
+      <img class="image-2-icon" alt="" src="./public/image-2@2x.png" />
+
+      <div class="social-media">
+        <a href="https://twitter.com/NgaruKevM" target="_blank">
+          <img src="./images/x.png" alt="Twitter Profile" />
+        </a>
+        <a href="https://www.linkedin.com/in/kevinngaru/" target="_blank">
+          <img src="./images/linkedin.png" alt="LinkedIn Profile" />
+        </a>
+      </div>
+
+      <div class="by-kevin-ngaru">by Kevin Ngaru</div>
+      <img class="index-item" alt="" src="./public/group-3.svg" />
+    </div>
+
+    <script>
+        const jokeElement = document.getElementById("joke");
+        const getJokeButton = document.getElementById("getJokeBtn");
+
+        getJokeButton.addEventListener("click", () => {
+            fetch("https://icanhazdadjoke.com/", {
+                headers: {
+                    "Accept": "application/json"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                jokeElement.textContent = data.joke;
+            })
+            .catch(error => {
+                jokeElement.textContent = "Failed to fetch a dad joke. Please try again later.";
+                console.error(error);
+            });
+        });
+    </script>
+  </body>
+</html>
