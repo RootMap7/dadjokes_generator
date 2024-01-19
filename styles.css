@@ -8,7 +8,7 @@
 }
 
 .a-dad-joke {
-  font-size: 24px;
+  font-size: 16px;
     display: flex;
     /* background: red; */
     justify-content: center;
@@ -24,15 +24,19 @@
 }
 
 .ellipse-parent {
-    background-color: #CCBA96;
-    border-radius: 40px;
-    padding: 20px;
-    margin-top: 20px;
+  background-color: #CCBA96;
+  border-radius: 40px;
+  padding: 20px;
+  margin-top: 20px;
+  height: 548px;
+  justify-content: center;
+  display: grid;
+  margin-top: 80px;
 }
 
 .frame-child {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   background-color: #CFC2A7;
   border-radius: 50%;
   display: inline-block;
@@ -50,19 +54,20 @@
 }
 
 .give-me-another {
-  font-size: 18px;
+  font-size: 28px;
   margin: 20px 0;
 }
 
 button {
   background-color: #D76D3F;
   color: #fff;
-  padding: 10px 20px;
+  padding: 19px 60px;
   border: none;
-  border-radius: 10px;
+  border-radius: 30px;
   font-family: 'Contrail One';
   font-size: 20px;
   cursor: pointer;
+  margin-top: 110px;
 }
 
 .by-kevin-ngaru {
@@ -77,11 +82,12 @@ button {
 
 .social-media {
   text-align: center;
-  margin-top: 20px; /* Adjust the margin as needed */
+  margin-top: 40px; /* Adjust the margin as needed */
 }
 .social-media a {
   display: inline-block;
   margin: 0 10px; /* Adjust the margin as needed */
+  
 }
 
 /* Add more styles as needed for your elements */
