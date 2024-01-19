@@ -23,16 +23,18 @@
   margin-right: 10px; /* Add spacing between the image and title */
 }
 
-  .ellipse-parent {
-    background-color: #CCBA96;
-    border-radius: 40px;
-    padding: 20px;
-    margin-top: 20px;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-  }
+.ellipse-parent {
+  background-color: #CCBA96;
+  border-radius: 40px;
+  padding: 20px;
+  margin-top: 20px;
+  height: 500px; /* Set a fixed height or adjust as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
 
 .frame-child {
   width: 100px;
