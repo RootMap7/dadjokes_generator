@@ -23,16 +23,16 @@
   margin-right: 10px; /* Add spacing between the image and title */
 }
 
-.ellipse-parent {
-  background-color: #CCBA96;
-  border-radius: 40px;
-  padding: 20px;
-  margin-top: 20px;
-  height: auto;
-  justify-content: center;
-  display: grid;
-  margin-top: 50px;
-}
+  .ellipse-parent {
+    background-color: #CCBA96;
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: 20px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
 
 .frame-child {
   width: 100px;
@@ -71,7 +71,7 @@ button {
 }
 
 .by-kevin-ngaru {
-  margin-top: 20px;
+  margin-top:40px;
   color:#fff
 }
 
@@ -81,8 +81,7 @@ button {
 }
 
 .social-media {
-  text-align: center;
-  margin-top: 40px; /* Adjust the margin as needed */
+  text-align: center;/* Adjust the margin as needed */
 }
 .social-media a {
   display: inline-block;
